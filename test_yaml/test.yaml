@@ -1,0 +1,30 @@
+name: krun
+files:
+    # -
+    #     name: /Users/guangbo/work/tools/nginx/html/slog/krun/{date}/c_client.log
+    #     topic: dati:c_client
+    # -
+    #     name: /Users/guangbo/work/tools/nginx/html/slog/krun/{date}/c_real.log
+    #     # topic: dati:c_real
+    # -
+    #     name: /Users/guangbo/work/tools/nginx/html/slog/krun/{date}/s_login.log
+    #     # topic: dati:s_login
+    # -
+    #     name: /Users/guangbo/work/tools/nginx/html/slog/krun/{date}/s_logout.log
+    #     # topic: dati:s_logout
+    # -
+    #     name: /Users/guangbo/work/tools/nginx/html/slog/krun/{date}/s_register.log
+    #     # topic: dati:s_register
+    # -
+    #     name: /Users/guangbo/work/tools/nginx/html/slog/krun/{date}/s_resource.log
+    #     # topic: dati:s_resource
+    -
+        name: /Users/guangbo/work/tools/nginx/html/slog/krun/{date}/s_event.log
+        # topic: krun-s_event1
+
+out:
+    kafka:
+        hosts: ["xxxx:19092"]
+        sasl: plain
+        username: admin
+        password: xxx

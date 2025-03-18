@@ -1,31 +1,3 @@
-# logtail
-日志收集工具
-
-### 执行方式
-
-``` shell
-# 指定配置目录，重新递归读取目录中的yaml配置文件。如果新增配置文件需要重启
-# 需要管理员权限，默认工作目录在/var/lib/logtail
-$ sudo logtail
-
-
-```
-
-### 注册服务
-
-``` shell
-sudo cp logtail.service /etc/systemd/system/logtail.service
-sudo systemctl daemon-reload
-sudo systemctl start logtail
-sudo systemctl stop logtail
-sudo systemctl restart logtail
-sudo systemctl status logtail
-```
-
-### yaml配置格式
-
-
-``` yaml
 name: dati
 files:
     -
@@ -53,5 +25,3 @@ files:
 #         sasl: plain # plain or scram
 #         username:
 #         password:
-
-```

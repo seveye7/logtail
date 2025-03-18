@@ -1,0 +1,11 @@
+[Unit]
+Description=Logtail Logging Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/logtail
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
